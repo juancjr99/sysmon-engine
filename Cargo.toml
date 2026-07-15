@@ -3,6 +3,10 @@ name = "sysmon-engine"
 version = "0.1.0"
 edition = "2024"
 
+[lib]
+name = "sysmon_engine"
+path = "src/lib.rs"
+
 [dependencies]
 nvml-wrapper = "0.10"
 sensors = "0.2"
