@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=SysMon
+Comment=System Monitor Applet
+Exec=/home/juanc_jr_99/.cargo/bin/sysmon-applet
+TryExec=/home/juanc_jr_99/.cargo/bin/sysmon-applet
+Terminal=false
+Type=Application
+Categories=COSMIC;
+Keywords=COSMIC;Applet;SysMon;Monitor;CPU;GPU;RAM;
+Icon=utilities-system-monitor-symbolic
+StartupNotify=true
+NoDisplay=true
+X-CosmicApplet=true
+X-CosmicAppletId=com.juancjr.SysMon
+X-CosmicShrinkable=true
+X-OverflowPriority=10

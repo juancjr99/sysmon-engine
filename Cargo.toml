@@ -10,3 +10,18 @@ path = "src/lib.rs"
 [dependencies]
 nvml-wrapper = "0.10"
 sensors = "0.2"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "sync", "time"] }
+
+[dependencies.libcosmic]
+git = "https://github.com/pop-os/libcosmic.git"
+rev = "511384f6"
+default-features = false
+features = ["applet", "applet-token", "tokio", "wayland", "winit"]
+
+[[bin]]
+name = "cli"
+path = "src/bin/cli.rs"
+
+[[bin]]
+name = "sysmon-applet"
+path = "src/bin/applet.rs"
